@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222;
+    color: #fff;
+}
+
+header {
+    background-color: #111;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffa500;
+    /* Change color on hover */
+}
+
+.underlined {
+    /*   background: red; */
+    position: relative;
+}
+
+.underline-clip:after {
+    content: '';
+    position: absolute;
+    top: 95%;
+    width: 150%;
+    aspect-ratio: 3 / 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    border: 6px solid hsl(225.85deg 71.85% 45.92%);
+    clip-path: polygon(0 0, 50% 50%, 100% 0);
+}
+
+.hero {
+    background-image: url('best_travel_photos_.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00b533;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+.about-us {
+    background-color: #111;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffa500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff8000;
+    /* Darker shade of orange on hover */
+}
+
+.featured-birds {
+    background-color: #111;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.featured-birds h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.bird-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bird-card {
+    width: 300px;
+    background-color: #333;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.bird-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.bird-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.bird-card p {
+    font-size: 1rem;
+}
+
+.explore-bird-species {
+    background-color: #3f2d2d;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.explore-bird-species h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.bird-thumbnails {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bird-thumbnail {
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.bird-thumbnail img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.bird-thumbnail h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.blog {
+    background-color: #111;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.blog-posts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    width: 300px;
+    margin: 20px;
+    text-align: left;
+}
+
+.blog-post img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffa500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff8000;
+    /* Darker shade of orange on hover */
+}
+
+footer {
+    background-color: #4f4f6c;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-links {
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .blog-post {
+        width: 90%;
+    }
+
+    .blog-post img {
+        width: 100%;
+    }
+}
