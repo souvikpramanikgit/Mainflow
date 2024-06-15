@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: #845afc;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  transition: color 0.3s;
+  font-family: poppins;
+}
+
+
+.App.dark {
+  color: white;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  background: #1b1a41;
+  padding: 2%;
+  margin-top: 3%;
+  box-shadow: 0px 5px 7px rgb(27, 27, 27);
+}
+
+.todo-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.todo-input button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #8717e9;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+
+.todo-input button:hover {
+  opacity: 0.8;
+}
+
+.btn-area {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.secondaryBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6027ff;
+  color: white;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.secondaryBtn.active {
+  background-color: #845afc;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  overflow-y: auto;
+  max-height: 400px;
+  scrollbar-width: thin;
+  scrollbar-color: #845afc #1b1a41;
+}
+
+.todo-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.todo-list::-webkit-scrollbar-track {
+  background: #1b1a41;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background-color: #845afc;
+  border-radius: 4px;
+}
+
+.todo-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-list-item h3 {
+  margin: 0;
+}
+
+.todo-list-item .icon,
+.todo-list-item .check-icon {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.primaryBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6411e9;
+  color: white;
+  cursor: pointer;
+}
+
+.primaryBtn:hover {
+  opacity: 0.5;
+}
+
+.edit__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit__wrapper input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
